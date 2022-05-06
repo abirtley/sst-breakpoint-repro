@@ -21,7 +21,7 @@
         "INSERT YOUR AWS PROFILE HERE"
       ],
       "console": "integratedTerminal",
-      "outFiles": ["${workspaceFolder}/.sst/artifacts"],
+      // "outFiles": ["${workspaceFolder}/.sst/artifacts"],
       "skipFiles": ["<node_internals>/**"]
     }
   ]

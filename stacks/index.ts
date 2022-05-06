@@ -7,9 +7,9 @@ export default function main(app: sst.App): void {
   app.setDefaultFunctionProps({
     srcPath: 'backend',
     runtime: 'nodejs14.x',
-    environment: {
-			NODE_OPTIONS: '--enable-source-maps'
-		}
+    // environment: {
+		// 	NODE_OPTIONS: '--enable-source-maps'
+		// }
   });
 
   // eslint-disable-next-line fp/no-unused-expression
