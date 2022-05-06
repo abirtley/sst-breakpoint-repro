@@ -1,0 +1,13 @@
+{
+  // vite (which is used by svelte kit) does not support extending @tsconfig/node14
+  // so we've copied that file into our local folder structure
+  "extends": "./tsconfig.node14",
+  "include": ["stacks", "common"],
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "target": "es2020",
+    "module": "es6",
+    "moduleResolution": "node"
+  }
+}

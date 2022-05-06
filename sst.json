@@ -1,0 +1,7 @@
+{
+  "name": "breakpoint-repro",
+  "region": "ap-southeast-2",
+  "lint": true,
+  "typeCheck": true,
+  "main": "stacks/index.ts"
+}

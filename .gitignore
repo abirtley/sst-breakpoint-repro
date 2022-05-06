@@ -1,0 +1,66 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+*/dist
+*/tmp
+*/build
+**/.build
+**/.sst
+
+# dependencies
+**/node_modules
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+
+# Secrets
+awsconfig.js
+.env.deploy.production
+**/*.secrets.ts
+
+# specifically untracked files
+untracked
+
+# OSX-specific ignores follow
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+#VS Code
+*.code-workspace
+
+# File for switching line endings (Unix/Windows)
+.gitattributes
+
+# test output artifacts
+test-results.xml
+
+# stack outputs that get used by test suites
+/**/sst-*-outputs.json

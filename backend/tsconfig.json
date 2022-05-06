@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.json",
+  "include": ["services"],
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "target": "es2020",
+    "module": "es6",
+    "moduleResolution": "node",
+  }
+}

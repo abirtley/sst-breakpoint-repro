@@ -1,0 +1,72 @@
+{
+  "name": "@breakpoint-repro/myapp",
+  "private": true,
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "sst:start": "sst start --outputs-file sst-start-outputs.json",
+    "sst:deploy": "sst deploy --outputs-file sst-deploy-outputs.json",
+    "sst:remove": "sst remove"
+  },
+  "workspaces": [
+    "backend"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "fp"
+    ],
+    "rules": {
+      "@typescript-eslint/no-explicit-any": "off",
+      "fp/no-arguments": "error",
+      "fp/no-class": "error",
+      "fp/no-delete": "error",
+      "fp/no-events": "error",
+      "fp/no-get-set": "error",
+      "fp/no-let": "error",
+      "fp/no-loops": "error",
+      "fp/no-mutating-assign": "error",
+      "fp/no-mutating-methods": "error",
+      "fp/no-mutation": [
+        "error",
+        {
+          "commonjs": true,
+          "allowThis": true,
+          "exceptions": [
+            {
+              "object": "foo",
+              "property": "bar"
+            }
+          ]
+        }
+      ],
+      "fp/no-nil": "error",
+      "fp/no-proxy": "error",
+      "fp/no-rest-parameters": "error",
+      "fp/no-this": "error",
+      "fp/no-throw": "error",
+      "fp/no-unused-expression": "warn",
+      "fp/no-valueof-field": "error",
+      "no-var": "error"
+    }
+  },
+  "devDependencies": {
+    "@serverless-stack/cli": "^1.0.0",
+    "@serverless-stack/resources": "^1.0.0",
+    "@tsconfig/node14": "^1.0.1",
+    "aws-cdk-lib": "2.20.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "typescript": "^4.5.5"
+  },
+  "resolutions": {
+    "jest": "^27.2.0"
+  }
+}

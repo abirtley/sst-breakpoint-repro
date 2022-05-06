@@ -1,0 +1,28 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug SST Start",
+      "type": "node",
+      "request": "launch",
+      "runtimeVersion": "14.17.5",
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/sst",
+      "runtimeArgs": [
+        "start",
+        "--increase-timeout",
+        "--stage",
+        "breakpoints",
+        "--outputs-file",
+        "common/sst-start-outputs.json",
+        "--profile",
+        "INSERT YOUR AWS PROFILE HERE"
+      ],
+      "console": "integratedTerminal",
+      "outFiles": ["${workspaceFolder}/.sst/artifacts"],
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
